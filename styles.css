@@ -21,3 +21,28 @@ nav{
     list-style-type: none ;
 }
 
+a
+{
+    text-decoration: none;
+
+}
+a:focus{
+    text-decoration: overline;
+    color: #0065FC;
+}
+a:hover{
+    text-decoration: overline;
+    color: #0065FC;
+}    
+
+.search{
+    border: 1px #F2F2F2 solid;
+    border-radius: 8px;
+
+}
+.filter{
+    text-align: justify;
+    border: 1px #F2F2F2 solid;
+    border-radius: 20px;
+}
+
