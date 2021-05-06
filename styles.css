@@ -7,3 +7,17 @@
 *{
     font-family: 'Raleway', Arial, Georgia, sans-serif;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+h1{
+    display: none;
+}
+nav{
+    display: flex;
+    list-style-type: none ;
+}
+
