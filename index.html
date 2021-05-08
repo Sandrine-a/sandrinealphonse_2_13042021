@@ -2,44 +2,53 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="styles.css" />
         <title>Reservia</title>
     </head>
 
     <body>
+        
+        <!-- Header -->
         <header>
+            <!-- H1 sémantique, logo here -->
             <h1>Reservia</h1>
-            <img src="images/logo/Reservia.svg" alt="logo"/> <!-- logo reservia ici en svg -->
-            <nav>
-                <p>
-                        <a href="#hebergements">Hébergements</a>
-    
-                        <a href="#activites">Activités</a>
+            <!-- Logo en backround image, voir en css -->
+           <nav>
+              <a href="#hebergements" class="partbottom">Hébergements</a>   
+              <a href="#activites" class="partbottom">Activités</a>
+              <a href="vide" class="parttop">S'inscrire</a>
+           </nav>
+            
+        </header>  
 
-                        <a href="#vide">S'inscrire </a>
-
-                </p>
-            </nav>
-        </header>    
-
-        <section> <!-- section de recherche hébergement-->
+         <!-- section  1 Recherche et filtres-->
+        <section> 
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 
             <form method="post" action="traitement.php">
                 <p>En plein centre ville ou en pleine nature</p>
 
                 <div class="search">
-                <img src="images/icones/map-marker-alt-solid.png" alt="Rechercher"/>
-                <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/> <label for="rechercher"> Rechercher</label>
+                <input type="image" src="images/icones/map-marker-alt-solid.png" alt="Rechercher" class="float"/>
+                <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/>
+                <input type=submit value="Rechercher" class="boutonsearch"/>
                 </div>
 
             </form>
-            <h3>Filtres</h3>
-             <h3 class="filter">Economique</h3> <h3 class= filter>Familial</h3> <h3 class="filter">Romantique</h3> <h3 class="filter">Animaux autorisés</h3>
+
+             <P>
+              <div class="noborder">Filtres</div>
+              <div class="filter"><img src="images/icones/money-bill-wave-solid.png" alt="Rechercher" class="filtericone"/> Economique</div>
+              <div class="filter"><img src="images/icones/child-solid.png" alt="Famillial" class="filtericone"/>Familial</div>
+              <div class="filter"><img src="images/icones/heart-solid.png" alt="Romantique" class="filtericone"/>Romantique</div>
+              <div class="filter"><img src="images/icones/dog-solid.png" alt="Animaux autorisés"class="filtericone"/>Animaux autorisés</div>
+             </P>
 
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
+        <!-- section 2 Carte hébergements -->
         <section>
             <div id="hebergements">
                 <H2> Hébergements à Marseille</H2>
@@ -47,32 +56,35 @@
             <aside>
                 <h2> Les plus populaires </h2>
             </aside>
+        </section>
 
+        <!-- Section 3 Carte activités -->
+        <section>
             <div id="activites">
                 <h2>Activités à Marseille</h2>
             </div>
-            
         </section>
 
-        <footer>
+        <!-- Footer -->
+        <footer class="grey">
             <h3> A propos</h3>
             <p>
-                Fonctionnement du site</p><br/>
+                Fonctionnement du site<br/>
                 Conditions générales de vente<br/>
                 Données et confidentialité<br/>
             </p>
                 
             <h3>Nos hébergements</h3>
-                <p>
+             <p>
                     Charte qualité<br/>
                     Soumettre votre hôtel
-                </p>
+             </p>
 
-                <h3>Assistance</h3>
-                <p>
+             <h3>Assistance</h3>
+             <p>
                     Centre d'aide<br/>
                     Nous contacter
-                </p>
+             </p>
 
 
         </footer>
