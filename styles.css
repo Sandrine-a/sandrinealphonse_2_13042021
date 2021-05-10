@@ -6,32 +6,25 @@
 
 body{
     font-family: 'Raleway', Arial, Georgia, sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .grey{
     background-color: #F2F2F2;
 }
-
 /* header*/
+
+/* Pour sémentique  */
 h1{
     display: none;
 }
-nav{
-    list-style-type: none;
+#contenair{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
-
-nav a{
-    margin: 20px;
-}
-
-header
-{
-    background-image: url("images/logo/reservia_logo.png");
-    background-repeat: no-repeat;
-    margin-top: 50px;
+.logo{
+    margin-right: auto;
 }
 .partbottom{
     color: black;
@@ -40,35 +33,46 @@ header
     font-weight: bold;
     color:#0065FC;
 }
-
-a
-{
+header a{
     text-decoration: none;
-
+    padding: 25px;
 }
-a:active{
+header a:active{
     border-top: 2px #0065FC solid;
     color: #0065FC;
 }
-a:hover{
+header a:hover{
     border-top: 2px #0065FC solid;
     color: #0065FC;
-}  
+}   
 
 /*section 1 recherche */
 
-.search{
-    height: 35px;
+#section1{
+    width: 75%;
 }
+.search{
+    height: 50px;
+    display: inline-block;
+}
+
+/*Barre de recherche */
 .float{
     float: left;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding-right: 10px;
+    height:49px;
+    width: 50px;
+}
+#rechercher{
+    height: 100%;
+    border: 1px #F2F2F2 solid; 
 }
 .boutonsearch{
-    height: 35px;
+    height: 100%;
     width: auto;
     background-color: #0065FC;
     color: white;
@@ -78,80 +82,89 @@ a:hover{
     border-bottom-right-radius: 10px;
     margin-left: -5px;
 }
-#rechercher{
-    height: 100%;
-    border: 1px #F2F2F2 solid;    
+form + p{
+    clear: both;
 }
-.noborder{
-    display: inline-block;
+
+/* Les filtres */
+#section1 a{
+    text-decoration: none;
+    color: black;
+}
+#filterselect{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    height: 50px;
 }
 .filter{
-    display: inline-block;
-    text-align: justify;
-    vertical-align: middle;
-    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
     border: 2px #F2F2F2 solid;
     border-radius: 35px;
-    margin: 10px;
-    width: auto;
 }
 .filtericone{
+    vertical-align: middle;
     background-color: #DEEBFF;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.filter:hover{
+    background-color: #F2F2F2;
+    font-size: 1.1em;
+    box-shadow: -3px -6px 10px #0065FC inset;
+    border: 3px #DEEBFF dashed;
 }
 
 /* Footer */
-footer{
-  
-}
+
 
 /* comportement responsive */
 
-@media all and (max-device-width: 480px) /* Media queries pour responsive header */
-{
-    body{
-        margin: auto;
-    }
-    /* Header */
+@media all and (max-device-width: 480px){/* Media queries pour responsive header */
 
-    nav
-    {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        border-bottom: 2px solid #F2F2F2;
-        height: 130px;
+    /* Header */
+    #contenair{
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    a:active{
+    #contenair :nth-child(1){
+        order: -1;
+    }
+    #contenair :nth-child(4){
+        order: -1;
+    }
+
+    header a:active{
         border-top: none;
         border-bottom: 2px #0065FC solid;
     }
-    a:hover{
+    header a:hover{
         border-top: none;
         border-bottom: 2px #0065FC solid;
     }  
-    .parttop{
-        align-self: flex-start;
-        text-align: justify;
-        margin-right: auto;
-        margin-top: 30px;   
-    }
-    .partbottom{
-        justify-content: center;
-        text-align: justify;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /*section 1 recherche et filtres */
-    .noborder {
-    display: inline-block;
-    width: 100%;
-    }
-    .search{
-    display: flex;
-    justify-content: center;
-    }
 
- }
+    /*section 1 recherche et filtres */
+    .search{
+        width: auto;
+        display: flex;
+        justify-content: center;
+     }
+
+    }
+    #filterselect{
+        height: 250px;
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #filterselect :nth-child(1){
+        flex: 1;
+    } 
+}

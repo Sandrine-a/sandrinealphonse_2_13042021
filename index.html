@@ -13,39 +13,52 @@
         <header>
             <!-- H1 sémantique, logo here -->
             <h1>Reservia</h1>
-            <!-- Logo en backround image, voir en css -->
-           <nav>
-              <a href="#hebergements" class="partbottom">Hébergements</a>   
-              <a href="#activites" class="partbottom">Activités</a>
-              <a href="vide" class="parttop">S'inscrire</a>
-           </nav>
+ 
+         <nav id="contenair">
+            <img src="images/logo/Reservia.svg" alt="logo Reservia" class="logo" />
+            <div class="element"><a href="#hebergements" class="partbottom">Hébergements</a></div>
+            <div class="element"><a href="#activites" class="partbottom">Activités</a></div>
+            <div class="element"><a href="vide" class="parttop">S'inscrire</a></div>
+
+         </nav>
             
         </header>  
 
          <!-- section  1 Recherche et filtres-->
-        <section> 
+        <section id="section1"> 
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 
-            <form method="post" action="traitement.php">
-                <p>En plein centre ville ou en pleine nature</p>
+         <form method="post" action="traitement.php">
+             <p>En plein centre ville ou en pleine nature</p>
+                
+             <div class="search">
+             <input type="image" src="images/icones/map-marker-alt-solid.svg" alt="Rechercher" class="float"/>
+             <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/>
+             <input type=submit value="Rechercher" class="boutonsearch"/>
+             </div>
 
-                <div class="search">
-                <input type="image" src="images/icones/map-marker-alt-solid.png" alt="Rechercher" class="float"/>
-                <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/>
-                <input type=submit value="Rechercher" class="boutonsearch"/>
-                </div>
+         </form>
 
-            </form>
-
-             <P>
+         <P>
+            <div id="filterselect">
               <div class="noborder">Filtres</div>
-              <div class="filter"><img src="images/icones/money-bill-wave-solid.png" alt="Rechercher" class="filtericone"/> Economique</div>
-              <div class="filter"><img src="images/icones/child-solid.png" alt="Famillial" class="filtericone"/>Familial</div>
-              <div class="filter"><img src="images/icones/heart-solid.png" alt="Romantique" class="filtericone"/>Romantique</div>
-              <div class="filter"><img src="images/icones/dog-solid.png" alt="Animaux autorisés"class="filtericone"/>Animaux autorisés</div>
-             </P>
-
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+              <div class="filter">
+                   <a href="xx"><img src="images/icones/money-bill-wave-solid (1).svg" alt="Rechercher" class="filtericone"/>Economique</a>
+              </div>
+              <div class="filter">
+                   <a href="xx"><img src="images/icones/child-solid.svg" alt="Famillial" class="filtericone"/>Familial</a>
+              </div>
+              <div class="filter">
+                   <a href="xx"><img src="images/icones/heart-solid.svg" alt="Romantique" class="filtericone"/>Romantique</a>
+                </div>
+              <div class="filter">
+                   <a href="xx"><img src="images/icones/dog-solid.svg" alt="Animaux autorisés"class="filtericone"/>Animaux autorisés</a>
+                </div>
+            </div>
+         </P>
+        
+        
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <!-- section 2 Carte hébergements -->
