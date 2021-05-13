@@ -19,7 +19,7 @@
             <img src="images/logo/Reservia.svg" alt="logo Reservia" class="logo" />
             <div class="element"><a href="#hebergements" class="partbottom">Hébergements</a></div>
             <div class="element"><a href="#activites" class="partbottom">Activités</a></div>
-            <div class="element"><a href="vide" class="parttop">S'inscrire</a></div>
+            <div class="element"><a href="#" class="parttop" >S'inscrire</a></div>
 
          </nav>
             
@@ -33,38 +33,35 @@
 
          <form method="post" action="traitement.php">           
              <div class="search">
-              <i class="fas fa-map-marker-alt">
-               <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/>
-              </i>
-              <div class="iconesearch">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="zonesearch">
+               <input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France"/>           
+               <div class="iconesearch">
                 <button type="submit" class="loupe"><i class="fas fa-search"></i></button>
-                <button type="submit" class="boutonsearch"> Rechercher</button> 
+                <button type="submit" class="boutonsearch"> Rechercher</button>
+               </div>
               </div>
              </div>
          </form>
-
 
           <div id="filterselect">
            <div class="noborder">
            <p>Filtres</p>
            </div>
            <div class="filterselection"> 
-              <div class="filter">
-                <i class="fas fa-money-bill-wave"></i><p>Economique</p>
-              </div>
-              <div class="filter">
-                <i class="fas fa-child"></i><p>Familial</p>
-              </div>
-              <div class="filter">
-                <i class="fas fa-heart"></i><p>Romantique</p>
-              </div>
-              <div class="filter">
-                <i class="fas fa-dog"></i><p>Animaux autorisés</p>
-              </div>
+                <button type="button" class="filterchoice"><i class="fas fa-money-bill-wave fa-fw fa-border fa-pull-left"></i>Economique</button>
+                <button type="button" class="filterchoice"><i class="fas fa-child fa-fw fa-border fa-pull-left"></i>Familial</button>
+                <button type="button" class="filterchoice"><i class="fas fa-heart fa-fw fa-border fa-pull-left"></i>Romantique</button>
+                <button type="button" class="filterchoice"><i class="fas fa-dog fa-fw fa-border fa-pull-left"></i>Animaux autorisés</button>
+
            </div>
           </div>
+      
 
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <p>
+            <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fas fa-info fa-stack-1x"></i></span>
+             Plus de 500 logements sont disponibles dans cette ville
+          </p>
 
       </section>
 

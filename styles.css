@@ -1,3 +1,14 @@
+
+/* aide visionnage a supprimer */
+html{
+    border:1px solid blue;
+ }
+body{
+    border:1px solid red;
+}
+
+/*fin aide */
+
 @font-face{
     font-family: 'Raleway';
     src: url('Raleway/Raleway-VariableFont_wght.ttf'),
@@ -6,7 +17,6 @@
 
 body{
     font-family: 'Raleway', Arial, Georgia, sans-serif;
-    width: 95%;
 }
 .grey{
     background-color: #F2F2F2;
@@ -19,11 +29,15 @@ h1{
 }
 #contenair{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    height: 100px;
 }
 .logo{
     margin-right: auto;
+}
+.element{
+    width: 120px;
+    text-align: center;
 }
 .partbottom{
     color: black;
@@ -34,91 +48,107 @@ h1{
 }
 header a{
     text-decoration: none;
-    padding: 25px;
+    padding: 40px 0;
 }
-header a:active{
+header a[class="partbottom"]:active{
     border-top: 2px #0065FC solid;
     color: #0065FC;
 }
-header a:hover{
+header a[class="partbottom"]:hover{
     border-top: 2px #0065FC solid;
     color: #0065FC;
 }   
 
 /*section 1 recherche */
 
-#section1{
-    width: 75%;
-    height: 300px;
-}
-.search{
-    height: 50px;
-    min-width: 40%;
-    display: flex;
-}
 
 /*Barre de recherche */
+.search{
+    display: flex;
+    height: 50px;
+    width:33%;
+}
 .fa-map-marker-alt{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    height:48px;
-    padding-left: 20px;
-    width: auto;
+    height:35px;
+    padding: 15px 15px 0px 15px;
+}
+.zonesearch{
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 #rechercher{
-    height: 100%;
-    border: 1px #F2F2F2 solid; 
+    border: none;
     font-weight: bold;
-    padding-left: 10px;
-    margin-left: 20px;
-    width: auto;
+    padding-left: 15px;
+    width: 170px;
 }
 #rechercher::placeholder{
     color: black;
 }
+.iconesearch{
+    width:auto;
+}
 .boutonsearch{
-    text-align: center;
     height: 100%;
-    width: auto;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
     border: 1px solid #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 130px;
 }
 .loupe{
     display: none;
 }
 /* Les filtres */
-.filterselection{
-    display:flex;
-    justify-content: space-between;
-}
+
 #filterselect{
     display: flex;
     margin-top: 30px;
+}
+.noborder{
     font-weight: bold;
 }
-.filter{
-    border: 1px #F2F2F2 solid;
-    border-radius: 30px;
-    vertical-align: middle;
-}
-.filter .fas{
-    background-color: #DEEBFF;
-    color: #0065FC;
+.filterselection{
+    display: flex;
+    justify-content: space-around;
+    min-width: 60%;
 }
 
-.filter:hover{
+.filterchoice{
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    height: 48px;
+}
+.filterselection .fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 30px;
+}
+.filterchoice:hover{
     background-color: #F2F2F2;
-    font-size: 1.1em;
     box-shadow: -3px -6px 10px #0065FC inset;
-    border: 3px #DEEBFF dashed;
+}
+.fa-stack{
+    font-size: 0.5em;
+}
+.fa-info{
+    color: #0065FC;
+}
+.fa-circle{
+    color:#F2F2F2;
 }
 /* Footer */
 
@@ -131,34 +161,40 @@ header a:hover{
     /* Header */
     #contenair{
         flex-wrap: wrap;
-        justify-content: flex-start;
+        height: 130px;
+        border-bottom: 2px solid #F2F2F2;
+        width: auto;
+    }
+    .element{
+        margin: auto;
+        width: 50%;
     }
     #contenair :nth-child(1){
         order: -1;
     }
     #contenair :nth-child(4){
         order: -1;
+        text-align: right;
     }
-
-    header a:active{
+    header a{
+        text-decoration: none;
+        padding: 16px 0;
+    }
+    header a[class="partbottom"]:active{
         border-top: none;
         border-bottom: 2px #0065FC solid;
     }
-    header a:hover{
+    header a[class="partbottom"]:hover{
         border-top: none;
         border-bottom: 2px #0065FC solid;
     }  
 
     /*section 1 recherche et filtres */
     .search{
-        width: auto;
-        display: flex;
         justify-content: center;
+        width: auto;
      }
-     .fa-map-marker-alt{
-         width: auto;
-     }
-     #rechercher{
+     .zonesearch{
          width: auto;
      }
      .loupe{
@@ -166,7 +202,6 @@ header a:hover{
         color: white;
         background-color: #0065FC;
         height: 100%;
-        width: auto;
         border: 1px #0065FC solid;
         border-radius:15px;
         width: 50px;
@@ -174,18 +209,10 @@ header a:hover{
      .boutonsearch{
          display: none;
      }
-
-  
     #filterselect{
-        height: 250px;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    #filterselect :nth-child(1){
-        flex: 100%;
+        display: inline-block;
     } 
-
+    .filterselection{
+        display: inline-block;
+    }
 }
