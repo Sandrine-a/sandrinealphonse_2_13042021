@@ -159,6 +159,53 @@ header a[class="partbottom"]:hover{
 .fa-circle{
     color:#F2F2F2;
 }
+
+/* Section 2 */
+#section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+#section2 .fa-star{
+    font-size: 0.75em;
+    color: #0065FC;
+}
+
+/*carte hébergement */
+#hebergement{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    padding: 20px;
+    width: 800px;
+}
+/* aside */
+aside{
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    margin-left: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: auto;
+}
+.imgmini{
+    border: 1px solid white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
 /* Footer */
 
 /* comportement responsive */
@@ -170,6 +217,7 @@ header a[class="partbottom"]:hover{
     /* Header */
     #contenair{
         flex-wrap: wrap;
+        justify-content: flex-end;
         height: 130px;
         border-bottom: 2px solid #F2F2F2;
         width: auto;
@@ -224,5 +272,12 @@ header a[class="partbottom"]:hover{
     .filterchoice{
         margin: auto;
         margin-bottom: 15px;
+    }
+    #section2{
+        flex-direction: column-reverse; 
+        margin: auto;
+    }
+    .aside{
+        margin: auto;
     }
 }
