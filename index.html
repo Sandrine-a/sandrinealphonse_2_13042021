@@ -11,24 +11,20 @@
     <body>
         
         <!-- Header -->
-        <header>
-            <!-- H1 sémantique, logo here -->
-            <h1>Reservia</h1>
- 
-         <nav id="contenair">
-            <img src="images/logo/Reservia.svg" alt="logo Reservia" class="logo" />
-            <div class="element"><a href="#hebergements" class="partbottom">Hébergements</a></div>
-            <div class="element"><a href="#activites" class="partbottom">Activités</a></div>
-            <div class="element"><a href="#" class="parttop" >S'inscrire</a></div>
-
-         </nav>
-            
-        </header>  
+      <header>
+        <nav class=menu>
+          <img src="images/logo/Reservia.svg" alt="logo Reservia" class="headerlogo" />  
+           <span class="parthebergement"><a href="#hebergements" >Hébergements</a></span>
+           <span class="partactivites"><a href="#activites">Activités</a></span>
+           <span class="inscription" >S'inscrire</span>      
+        </nav>
+    
+       </header>  
 
          <!-- section  1 Recherche et filtres-->
-      <section id="section1"> 
+      <section class="section1"> 
 
-         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
          <form method="post" action="traitement.php">           
@@ -50,23 +46,21 @@
            </div>
            <div class="filterselection"> 
             <div class="filterchoice">
-             <div class="filtericone"><i class="fas fa-money-bill-wave fa-fw fa-lg"></i></div>
+             <div class="filtericone"><i class="fas fa-money-bill-wave fa-fw"></i></div>
               <a href="#" class="option">Économique</a>
             </div>
             <div class="filterchoice">
-             <div class="filtericone">
-                <i class="fas fa-child fa-fw fa-lg"></i></div>
+             <div class="filtericone"><i class="fas fa-child fa-fw"></i></div>
                 <a href="#" class="option">Familial</a>
-              </div>
-             <div class="filterchoice">
-              <div class="filtericone">
-                <i class="fas fa-heart fa-fw fa-lg"></i></div>
-                  <a href="#" class="option">Romantique</a>
-              </div>
-             <div class="filterchoice">
-              <div class="filtericone"><i class="fas fa-dog fa-fw fa-lg"></i></div>
+            </div>
+            <div class="filterchoice">
+             <div class="filtericone"> <i class="fas fa-heart fa-fw"></i></div>
+               <a href="#" class="option">Romantique</a>
+            </div>
+            <div class="filterchoice">
+            <div class="filtericone"><i class="fas fa-dog fa-fw"></i></div>
               <a href="#" class="option">Animaux autorisés</a>
-              </div>
+            </div>
            </div>
           </div>
       
@@ -79,41 +73,39 @@
       </section>
 
         <!-- section 2 Carte hébergements -->
-        <section id="section2">
+        <section class="section2">
             <div id="hebergements" class="grey">
-                <H2> Hébergements à Marseille</H2>
+                <h1> Hébergements à Marseille</H2>
                 <p>Affichez plus</p>
             </div>
 
-            <aside class="grey">
+            <aside >
+             <div class="highlights">
               <div class="top">
                 <h2> Les plus populaires </h2>
-                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line fa-lg"></i>
               </div>
               <div class="card">
-                  <div class="imagecard">
-                    <img src=images/hebergements/miniatures/emile-guillemot-mini.jpg alt="chambre Emile Guillemot" title="Cliquez pour agrandir"  class="imgmini"/>
-                  </div>
-                  <div class="descript">
-                    <p>
+                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre Emile Guillemot" class="imgmini"/>
+                 <div class="description">
+                    <span>
                      <strong>Hotel le Soleil du matin</strong>
                      <p>Nuit à partir de 128€</p>
-                    </p>
-                    <div class="starsicone">
+                    </span>
+                    <span class="starsicone">
                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                  </div>
+                    </span>
+                 </div>
               </div>
                   
-                <div></div>
-                <div></div>
-
-                </div> 
+              <div></div>
+              <div></div>
+             </div> 
             </aside>
         </section>
 
         <!-- Section 3 Carte activités -->
-        <section id="section3">
+        <section class="section3">
             <div id="activites">
                 <h2>Activités à Marseille</h2>
             </div>
