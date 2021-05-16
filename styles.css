@@ -21,6 +21,12 @@ body{
 .grey{
     background-color: #F2F2F2;
 }
+.colorblue{
+    color: #0065FC;
+}
+.colorgrey{
+    color:#F2F2F2
+}
 a{
     text-decoration: none;
     color: black;
@@ -127,7 +133,6 @@ a{
     border-radius: 44px;
 }
 .filterselection .fas{
-    color: #0065FC;
     padding: 13px;
 }
 .option{
@@ -141,18 +146,16 @@ a{
     text-shadow: 6px 3px 3px rgb(27, 44, 99);
 }
 
-/*Zone info sous under filter */
-.fa-stack{
-    font-size: 0.5em;
-}
+/*Zone info under filter */
 .fa-info{
+    font-size: 0.75em;
     color: #0065FC;
 }
 .fa-circle{
     color:#F2F2F2;
 }
-
 /* Section 2 */
+
 .section2{
     display: flex;
     justify-content: space-between;
@@ -160,7 +163,6 @@ a{
 }
 .section2 .fa-star{
     font-size: 0.75em;
-    color: #0065FC;
 }
 
 /*carte hébergement */
@@ -177,13 +179,17 @@ a{
     border-radius: 30px;
     width: 400px;
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
 }
 .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 330px;
-    margin: auto;
+    height: 15px;
+    margin:auto;
 }
 .card{
     background-color: white;
@@ -194,7 +200,6 @@ a{
     overflow: hidden;
     margin: auto;  
     display: flex;
-    justify-content: space-between;
 }
 .imgmini{
     width: 130px;
@@ -203,8 +208,11 @@ a{
     object-position: center;
 }
 .card .description{
-    width: 100%;
-
+    margin-left:20px;
+    width:170px;
+}
+.card .starsicone{
+    padding-top: 15px;
 }
 
 /* Footer */
@@ -261,7 +269,7 @@ a{
         margin: auto;
         margin-bottom: 15px;
     }
-    #section2{
+    .section2{
         flex-direction: column-reverse; 
         margin: auto;
     }
