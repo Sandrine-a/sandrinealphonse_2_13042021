@@ -105,11 +105,11 @@ a{
     display: none;
 }
 /* Les filtres */
-#filterselect{
+.filters{
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     margin-top: 30px;
-    max-width: 80%;
 }
 .noborder{
     font-weight: bold;
@@ -143,9 +143,8 @@ a{
 .option:hover{
     color: #0065FC;
     font-weight: bold;
-    text-shadow: 6px 3px 3px rgb(27, 44, 99);
+    text-shadow: 6px 3px 3px rgb(95, 104, 133);
 }
-
 /*Zone info under filter */
 .fa-info{
     font-size: 0.75em;
@@ -155,22 +154,44 @@ a{
     color:#F2F2F2;
 }
 /* Section 2 */
-
 .section2{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .section2 .fa-star{
     font-size: 0.75em;
 }
-
 /*carte hébergement */
-#hebergement{
+#hebergements{
     border: 1px solid #F2F2F2;
     border-radius: 30px;
-    padding: 20px;
     width: 800px;
+    padding: 0 30px;
+}
+#hebergements .cardsection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 450px;
+}
+#hebergements .card{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 230px;
+    height: 180px;
+}
+#hebergements .imgmini{
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+}
+#hebergements .description{
+    padding:5px 0 0 8px;
+}
+.plus{
+    font-weight: bold;
 }
 /* aside */
 .highlights{
@@ -181,7 +202,7 @@ a{
     height: 600px;
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
+    margin-left: 20px;
 }
 .top{
     display: flex;
@@ -191,36 +212,58 @@ a{
     height: 15px;
     margin:auto;
 }
-.card{
+.highlights .card{
     background-color: white;
     border: 5px solid white;
-    border-radius: 30px;
+    border-radius: 20px;
     height: 130px;
     width:330px;
     overflow: hidden;
     margin: auto;  
     display: flex;
 }
-.imgmini{
+.highlights .imgmini{
     width: 130px;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-.card .description{
+.highlights .description{
     margin-left:20px;
     width:170px;
 }
-.card .starsicone{
+.highlights .starsicone{
     padding-top: 15px;
 }
-
+/*carte activites*/
+#activites{
+    height: 570px;
+}
+#activites .cardsection{
+}
+#activites .card{
+    max-height: 440px;
+    max-width: 305px;
+    border: 1px solid #F2F2F2;
+    box-shadow:3px 3px 5px #F2F2F2;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+#activites .imgmini{
+    max-height: 380px;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
 /* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
 
-/* comportement responsive */
-
-@media all and (max-width: 480px){/* Media queries pour responsive header */
-    /* Header */
+@media all and (max-width: 480px)
+{
     .menu{
         grid-template-columns: 1fr 1fr ;
         border-bottom: 1px solid #F2F2F2;
@@ -230,7 +273,6 @@ a{
         grid-column: 2;
         text-align: end;
     }
-
     .menu a:active{
         border-top: none;
         border-bottom: 2px #0065FC solid;
@@ -241,8 +283,6 @@ a{
         border-bottom: 2px #0065FC solid;
         padding-bottom: 9px;
     }  
-
-    /*section 1 recherche et filtres */
     .search{
         justify-content: center;
         width: auto;
@@ -262,18 +302,47 @@ a{
      .boutonsearch{
          display: none;
      }
-    #filterselect{
+    .filters{
         display: inline-block;
+        width: auto;
     } 
     .filterchoice{
-        margin: auto;
         margin-bottom: 15px;
+        height: auto;
     }
     .section2{
         flex-direction: column-reverse; 
+        width: auto;
         margin: auto;
     }
-    .aside{
+    .highlights{
+        margin: auto;
+        width: auto;
+    }
+    #hebergements{
+        background: none;
+        border: none;
+    }
+    #hebergements .cardsection{
+        flex-direction: column;
+    }
+    #hebergements .card{
+        border: 1px solid #F2F2F2;
+        box-shadow:3px 3px 5px #F2F2F2;
+    }
+    /* Footer */
+    .footer{
+        flex-direction: column; 
+    }
+}
+@media all and (min-width: 481px) and (max-width: 991px)
+{  
+    .filters{
+        display: inline-block;
+    } 
+    .section2{
+        flex-direction: column;
         margin: auto;
     }
+
 }
