@@ -239,20 +239,53 @@ a{
 #activites{
     height: 570px;
 }
-#activites .card{
-    max-height: 440px;
-    max-width: 305px;
+#activites .cardsection{
+    height: 440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.vieuxport{
+    grid-column: 1;
+    grid-row: 1/2;
+}
+.pomegues{
+    grid-column: 2;
+    grid-row: 1;
+}
+.frioul{
+    grid-column: 2;
+    grid-row: 2;
+}
+.parcnat{
+    grid-column: 3;
+    grid-row:1/2;
+}
+.ndg{
+    grid-column: 4;
+    grid-row: 1;
+}
+.longchamp{
+    grid-column: 4;
+    grid-row: 2;
+}
+#activites{
+    height: 540px;
+}
+#activites .cardsection > div{
     border: 1px solid #F2F2F2;
     box-shadow:3px 3px 5px #F2F2F2;
     border-radius: 20px;
     overflow: hidden;
-    height: 100%;
+    width: 300px;
 }
 #activites .imgmini{
-    max-height: 380px;
-    max-width: 300px;
     object-fit: cover;
-    object-position: center;
+    width: 100%;
+    height: 150px;
+}
+#activites .card > p {
+    padding-left: 10px;
+
 }
 /* Footer */
 .footer{
@@ -314,23 +347,44 @@ a{
         margin: auto;
     }
     .highlights{
+        border-radius: 0;
         margin: auto;
         width: auto;
     }
     #hebergements{
+        height: 1250px;
         background: none;
         border: none;
     }
     #hebergements .cardsection{
         flex-direction: column;
+        height: 90%;
     }
     #hebergements .card{
         border: 1px solid #F2F2F2;
         box-shadow:3px 3px 5px #F2F2F2;
+        width:300px;
+    }
+    /*activités*/
+    .section3{
+        margin: auto;
+        widows: auto;
+    }
+    #activites{
+        height: 1300px;
+    }
+    #activites .cardsection{
+        height: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
     }
     /* Footer */
     .footer{
         flex-direction: column; 
+        margin: auto;
     }
 }
 @media all and (min-width: 481px) and (max-width: 991px)
