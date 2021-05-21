@@ -1,13 +1,4 @@
 
-/* aide visionnage a supprimer */
-html{
-    border:1px solid blue;
- }
-body{
-    border:1px solid red;
-}
-
-/*fin aide */
 *{
     font-family: 'Raleway', Arial, Georgia, sans-serif;
 }
@@ -166,7 +157,7 @@ a{
 #hebergements{
     border: 1px solid #F2F2F2;
     border-radius: 30px;
-    width: 860px;
+    flex: 1;
     padding: 0 30px;
 }
 #hebergements .cardsection{
@@ -267,7 +258,7 @@ a{
 }
 #activites .cardsection > div{
     border: 1px solid #F2F2F2;
-    box-shadow:3px 3px 5px #F2F2F2;
+    box-shadow: 5px 7px 7px #F2F2F2;
     border-radius: 20px;
     overflow: hidden;
     width: auto;
