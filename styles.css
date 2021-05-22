@@ -187,18 +187,18 @@ a{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
-    width: 400px;
     height: 600px;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    padding: 10px 30px;
 }
-.top{
+.highlights .top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 330px;
     height: 15px;
+    width: 100%;
     margin:auto;
 }
 .highlights .card{
@@ -206,7 +206,7 @@ a{
     border: 5px solid white;
     border-radius: 20px;
     height: 130px;
-    width:330px;
+    width: 100%;
     overflow: hidden;
     margin: auto;  
     display: flex;
@@ -342,22 +342,25 @@ a{
     }
     .section2{
         flex-direction: column-reverse; 
-        width: auto;
-        margin: auto;
     }
     .highlights{
         border-radius: 0;
         margin: auto;
-        width: auto;
+        padding: 0;
+    }
+    .highlights .card{
+        width: 97%;
     }
     #hebergements{
-        width: auto;
         background: none;
         border: none;
+        margin: auto;
+        padding: 0;
     }
     #hebergements .cardsection{
         flex-direction: column;
         height: 90%;
+        width: auto;
     }
     #hebergements .card{
         border: 1px solid #F2F2F2;
@@ -369,7 +372,6 @@ a{
     #activites{
         width: auto;
         margin: auto;
-        padding: 0 30px;
     }
     #activites .cardsection{
         display: block;
