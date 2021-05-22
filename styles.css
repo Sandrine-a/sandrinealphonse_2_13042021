@@ -366,11 +366,8 @@ a{
         width: auto;
     }
     /*activités*/
-    .section3{
-        margin: auto;
-        width: auto;
-    }
     #activites{
+        width: auto;
         margin: auto;
         padding: 0 30px;
     }
@@ -422,7 +419,7 @@ a{
     }
     #activites .cardsection > div{
         margin: auto;
-        width: 230px;
+        width: 220px;
     }
     .vieuxport{
         grid-column: 1;
@@ -447,5 +444,8 @@ a{
     .longchamp{
         grid-column: 2;
         grid-row: 3;
+    }
+    #activites .card > .titre{
+        padding-left: 10px;
     }
 }
