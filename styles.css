@@ -25,12 +25,23 @@ a{
     max-width:1340px;
 }
 /* header*/
-.menu{
+.banniere{
     height: 100px;
+    width: auto;
+}
+.headerlogo{
+    padding-top:22px;
+}
+.menu{
     text-align: center;
-    display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    position: absolute;
+    right: 0px;
+    height: 100px;
+    width: auto;
+    min-width: 33%;
 }
 .inscription{
     font-weight: bold;
@@ -50,6 +61,7 @@ a{
 } 
 /*section 1 recherche et filtres*/
 /*Barre de recherche */
+
 .search{
     display: flex;
     height: 50px;
@@ -289,7 +301,11 @@ a{
 
 @media all and (max-width: 480px)
 {
+    .headerlogo{
+        padding-top:0;
+    }
     .menu{
+        width:100%;
         grid-template-columns: 1fr 1fr ;
         border-bottom: 2px solid #F2F2F2;
     }
@@ -297,21 +313,29 @@ a{
         grid-row: 1;
         grid-column: 2;
         text-align: end;
-        padding-right:20px;
+        padding-right:5px;
+    }
+    .parthebergements{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .partactivites{
+        grid-column: 2;
+        grid-row: 2;
     }
     .parthebergements:hover{
         color:#0065FC;
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
         border-top: none;
-        padding: 18px 0;
+        padding: 30px 0;
     } 
     .partactivites:hover{
         color:#0065FC;
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
         border-top: none;
-        padding: 18px 0;
+        padding: 30px 0;
     } 
     .search{
         justify-content: center;
@@ -396,6 +420,9 @@ a{
 }
 @media all and (min-width: 481px) and (max-width: 991px)
 {  
+    .menu{
+        right: 0px;
+    }
     .filters{
         display: inline-block;
     } 
