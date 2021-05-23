@@ -65,15 +65,17 @@ a{
 .search{
     display: flex;
     height: 50px;
-    width:33%;
 }
-.fa-map-marker-alt{
-    background-color: #F2F2F2;
+.searchicone{
     border: 1px solid #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    height:35px;
-    padding: 15px 15px 0px 15px;
+    height:100%;
+    width: 50px;
+    text-align: center;
+}
+.fa-map-marker-alt{
+    padding-top: 15px;
 }
 .zonesearch{
     display: flex;
@@ -86,12 +88,13 @@ a{
 }
 #rechercher{
     border: none;
-    font-weight: bold;
     padding-left: 15px;
     width: 220px;
 }
 #rechercher::placeholder{
     color: black;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 .iconesearch{
     width:auto;
@@ -100,11 +103,11 @@ a{
     height: 100%;
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
     border: 1px solid #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 130px;
+    font-weight: bold;
 }
 .loupe{
     display: none;
@@ -127,7 +130,6 @@ a{
     border-radius: 44px;
     border-left: none;
     margin-right: 20px;
-    padding-bottom:1px;
 }
 .filtericone{
     display: inline-block;
@@ -241,7 +243,7 @@ a{
     grid-template-columns: repeat(4, auto);
     gap: 30px;
     height: 440px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .vieuxport{
     grid-column: 1;
@@ -287,7 +289,7 @@ a{
     height: 85%;
 }
 #activites .card > .titre{
-    padding-left: 20px;
+    padding-left: 15px;
 }
 /* Footer */
 .footer{
@@ -306,13 +308,14 @@ a{
     .menu{
         width:100%;
         grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 50% 50%;
         border-bottom: 2px solid #F2F2F2;
     }
     .inscription{
         grid-row: 1;
         grid-column: 2;
         text-align: end;
-        padding-right:5px;
+        padding-right: 10px;
     }
     .parthebergements{
         grid-column: 1;
@@ -327,22 +330,25 @@ a{
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
         border-top: none;
-        padding: 30px 0;
+        padding: 16px 0;
     } 
     .partactivites:hover{
         color:#0065FC;
         border-bottom: 2px #0065FC solid;
         color: #0065FC;
         border-top: none;
-        padding: 30px 0;
+        padding: 16px 0;
     } 
     .search{
-        justify-content: center;
         width: auto;
+        margin: auto;
      }
      .zonesearch{
-         width: auto;
+         width: 100%;
      }
+     #rechercher{
+        width: 100%;
+    }
      .loupe{
         display: inline-block;
         color: white;
@@ -355,6 +361,7 @@ a{
      .boutonsearch{
          display: none;
      }
+     
     .filters{
         display: inline-block;
         width: auto;
@@ -424,6 +431,9 @@ a{
     .filters{
         display: inline-block;
     } 
+    .filterchoice{
+        margin-bottom: 10px;
+    }
     .section2{
         flex-direction: column;
         margin: auto;
@@ -475,8 +485,5 @@ a{
     .longchamp{
         grid-column: 2;
         grid-row: 3;
-    }
-    #activites .card > .titre{
-        padding-left: 10px;
     }
 }
