@@ -1,4 +1,4 @@
-/*general*/
+/*Styles generaux*/
 * {
   font-family: "Raleway", Arial, Georgia, sans-serif;
 }
@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 .medium {
-  font-size: 500;
+  font-size: medium;
 }
 a {
   text-decoration: none;
@@ -183,12 +183,15 @@ li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 450px;
+  min-height: 460px;
 }
 #hebergements .card {
   background-color: white;
   border: 5px solid white;
   border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   width: 230px;
   height: 195px;
@@ -201,14 +204,18 @@ li {
 #hebergements .description {
   padding: 2px 0 0 10px;
 }
+#hebergements .description > p {
+  margin: 0;
+}
 /* aside */
 .highlights {
   border: 1px solid #f2f2f2;
   border-radius: 30px;
   height: 600px;
+  width: 350px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 40px;
   padding: 10px 30px;
 }
 .highlights .top {
@@ -390,7 +397,8 @@ li {
   .highlights {
     border-radius: 0;
     margin: auto;
-    padding: 0;
+    padding: 5px;
+    width: auto;
   }
   .highlights .card {
     width: 97%;
@@ -408,7 +416,6 @@ li {
   }
   #hebergements .card {
     box-shadow: 3px 3px 5px #f2f2f2;
-    margin-bottom: 20px;
     width: auto;
   }
   /*activités*/
@@ -455,13 +462,9 @@ li {
     width: auto;
     border: none;
   }
-  #hebergements .card {
-    margin-bottom: 15px;
-  }
   .highlights {
     margin: auto;
     margin-top: 20px;
-    width: 360px;
   }
   .highlights .card {
     width: auto;
