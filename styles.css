@@ -165,14 +165,14 @@ li {
 .fa-circle {
   color: #f2f2f2;
 }
-/* Section 2 */
+/* Section 2 carte hébergements et aside */
 .section2 {
   display: flex;
 }
 .section2 .fa-star {
   font-size: 0.75em;
 }
-/*carte hébergement */
+/*carte hébergements */
 #hebergements {
   border: 1px solid #f2f2f2;
   border-radius: 30px;
@@ -250,7 +250,7 @@ li {
   margin-top: 0;
   height: 33%;
 }
-/*carte activites*/
+/*carte article activites*/
 #activites .cardsection {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -361,6 +361,7 @@ li {
     border-top: none;
     padding: 16px 0;
   }
+  /*section 1 recherche et filtres*/
   .search {
     width: auto;
     margin: auto;
@@ -391,6 +392,7 @@ li {
     margin-bottom: 15px;
     height: auto;
   }
+  /*section2 carte hébergements et activités*/
   .section2 {
     flex-direction: column-reverse;
   }
@@ -416,9 +418,9 @@ li {
   }
   #hebergements .card {
     box-shadow: 3px 3px 5px #f2f2f2;
-    width: auto;
+    width: 97%;
   }
-  /*activités*/
+  /* article activités*/
   #activites {
     width: auto;
     margin: auto;
@@ -454,6 +456,7 @@ li {
   .filterchoice {
     margin-bottom: 10px;
   }
+  /*section2 carte hébergements et activités*/
   .section2 {
     flex-direction: column;
     margin: auto;
@@ -469,6 +472,7 @@ li {
   .highlights .card {
     width: auto;
   }
+  /*article activités*/
   #activites .cardsection {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 440px 180px 180px;
@@ -476,7 +480,7 @@ li {
   }
   #activites .cardsection > div {
     margin: auto;
-    width: 220px;
+    max-width: 300px;
   }
   .vieuxport {
     grid-column: 1;
