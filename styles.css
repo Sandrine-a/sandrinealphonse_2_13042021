@@ -242,6 +242,7 @@ li {
 .highlights .description {
   width: 170px;
   margin-right: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
