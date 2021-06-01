@@ -209,42 +209,45 @@ li {
   border: 1px solid #f2f2f2;
   border-radius: 30px;
   height: 600px;
-  width: 350px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   margin-left: 40px;
-  padding: 10px 30px;
+  padding: 10px 0;
 }
 .highlights .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 15px;
-  width: 100%;
+  width: 330px;
 }
 .highlights .card {
   background-color: white;
   border: 5px solid white;
   border-radius: 20px;
-  height: 130px;
-  width: 100%;
+  height: 120px;
+  width: 330px;
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
 }
 .highlights .imgmini {
-  width: 130px;
-  height: 100%;
+  width: 125px;
   object-fit: cover;
   object-position: center;
 }
 .highlights .description {
-  padding: 10px 0 0 20px;
   width: 170px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.highlights .description > p {
-  margin-top: 0;
-  height: 33%;
+.highlights .description p {
+  margin-top: 5px;
 }
 /*carte article activites*/
 #activites .cardsection {
@@ -271,11 +274,11 @@ li {
 }
 .parcnat {
   grid-column: 3;
-  grid-row: 1 / 4 ;
+  grid-row: 1 / 4;
 }
 .ndg {
   grid-column: 4;
-  grid-row: 1 ;
+  grid-row: 1;
   height: 190px;
 }
 .longchamp {
@@ -305,6 +308,8 @@ li {
 }
 /* Footer */
 .footer {
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -363,6 +368,9 @@ li {
     padding: 16px 0;
   }
   /*section 1 recherche et filtres*/
+  .section1 {
+    padding: 5px;
+  }
   .search {
     width: auto;
     margin: auto;
@@ -394,6 +402,12 @@ li {
     margin-bottom: 15px;
     height: auto;
   }
+  .info {
+    display: flex;
+  }
+  .infotext {
+    margin-left: 5px;
+  }
   /*section2 carte hébergements et activités*/
   .section2 {
     flex-direction: column-reverse;
@@ -402,18 +416,23 @@ li {
   .highlights {
     border-radius: 0;
     margin: auto;
-    padding: 20px 5px;
-    height:500px;
     width: auto;
   }
+  .highlights .top {
+    width: 95%;
+  }
   .highlights .card {
-    width: 97%;
+    width: 95%;
+  }
+  .highlights .description {
+    margin-right: auto;
+    margin-left: auto;
   }
   #hebergements {
     background: none;
     border: none;
     margin: auto;
-    padding: 0;
+    padding: 5px;
     width: 100%;
   }
   #hebergements .cardsection {
@@ -428,6 +447,7 @@ li {
   #activites {
     width: auto;
     margin: auto;
+    padding: 5px;
   }
   #activites .cardsection {
     display: block;
@@ -471,9 +491,6 @@ li {
   .highlights {
     margin: auto;
     margin-top: 20px;
-  }
-  .highlights .card {
-    width: auto;
   }
   /*article activités*/
   #activites .cardsection {
