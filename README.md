@@ -2,7 +2,7 @@
 
 ### Projet 2 Openclassrooms:
 
-*** Compétences évaluées: ***
+***Compétences évaluées:***
 
 - Implémenter une interface responsive
 - Intégrer du contenu conformément à une maquette
